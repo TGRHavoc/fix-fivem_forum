@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FiveM forum cleanup
 // @namespace    http://github.com/TGRHavoc
-// @version      0.0.3
+// @version      0.0.4
 // @homepage     https://github.com/TGRHavoc/fix-fivem_forum
 // @supportUrl   https://github.com/TGRHavoc/fix-fivem_forum/issues
 // @updateUrl    https://raw.githubusercontent.com/TGRHavoc/fix-fivem_forum/master/fix_fivem_forum.js
@@ -26,7 +26,7 @@ var css = [
     '.discourse-tag.simple, .discourse-tag.simple:visited, .discourse-tag.simple:hover { color: #009db1; }',
     // topic backgrounds (read and unread)
     '.topic-list-item { background-color: #003940; }',
-    '.topic-list-item.visited { background-color: #212121; }'
+    '.topic-list-item.visited { background-color: #212121; }',
     // histroy reason text
     '.modal.history-modal span.edit-reason { background-color: #212121; color: #fff; }',
 ];

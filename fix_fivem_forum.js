@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FiveM forum cleanup
 // @namespace    http://github.com/TGRHavoc
-// @version      0.0.4
+// @version      0.0.5
 // @homepage     https://github.com/TGRHavoc/fix-fivem_forum
 // @supportUrl   https://github.com/TGRHavoc/fix-fivem_forum/issues
 // @updateUrl    https://raw.githubusercontent.com/TGRHavoc/fix-fivem_forum/master/fix_fivem_forum.js
@@ -17,10 +17,8 @@ var css = [
     'body { font-family: \"Roboto\", sans-serif; }',
     // make read topics daker
     '.topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification) { color: #848484; }',
-    // Code highlighting (thanks to Vespura)
-    'code{ background-color: #1e1e1e !important; border-radius: 2px; padding: 2px 4px; color: #d2d2d2 !important; font-weight: normal; } .hljs, .hljs-title{ color: #d2d2d2; font-weight: normal; } code.hljs{ padding: 20px; } .hljs-comment{ color: #50a64a; } .hljs-string, .hljs-meta-string, .hljs-subst{ color: #cb8d71; } .hljs-keyword, .hljs-literal{ color: #3574b9; } .hljs-params{ color: #dcdcdc; } .hljs-built_in{ color: #33a6aa; } .hljs-number{ color: #a6ce9b; } .hljs-deletion{ background-color: #ca3838; padding: 2px; line-height: 1.7em; } .hljs-addition{ background-color: #169616; padding: 2px; line-height: 1.7em; }',
-    '.hljs-title, .hljs-name, .coffeescript .hljs-params, .scss .hljs-meta{ color: #ff4b4b; }',
-    '.hljs-attr{ color: #03c700; }',
+    // Code highlighting ( * Author: Nicolas LLOBERA <nllobera@gmail.com>)
+    'code{background-color:#1e1e1e!important;border-radius:2px;padding:2px 4px;color:#d2d2d2!important;font-weight:400}.hljs{display:block;overflow-x:auto;padding:.5em;background:#1E1E1E;color:#DCDCDC}.hljs-addition,.hljs-deletion{display:inline-block;width:100%}.hljs-keyword,.hljs-link,.hljs-literal,.hljs-name,.hljs-symbol{color:#569CD6}.hljs-link{text-decoration:underline}.hljs-built_in,.hljs-type{color:#4EC9B0}.hljs-class,.hljs-number{color:#B8D7A3}.hljs-meta-string,.hljs-string{color:#D69D85}.hljs-regexp,.hljs-template-tag{color:#9A5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#DCDCDC}.hljs-comment,.hljs-quote{color:#57A64A;font-style:italic}.hljs-doctag{color:#608B4E}.hljs-meta,.hljs-meta-keyword,.hljs-tag{color:#9B9B9B}.hljs-template-variable,.hljs-variable{color:#BD63C5}.hljs-attr,.hljs-attribute,.hljs-builtin-name{color:#9CDCFE}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#D7BA7D}.hljs-addition{background-color:#144212}.hljs-deletion{background-color:#600}',
 
     // topic tags
     '.discourse-tag.simple, .discourse-tag.simple:visited, .discourse-tag.simple:hover { color: #009db1; }',

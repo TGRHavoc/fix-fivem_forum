@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FiveM forum cleanup
 // @namespace    http://github.com/TGRHavoc
-// @version      0.0.8
+// @version      0.0.9
 // @homepage     https://github.com/TGRHavoc/fix-fivem_forum
 // @supportUrl   https://github.com/TGRHavoc/fix-fivem_forum/issues
 // @updateUrl    https://raw.githubusercontent.com/TGRHavoc/fix-fivem_forum/master/fix_fivem_forum.js
@@ -28,8 +28,7 @@ var css = [
     // histroy reason text
     '.modal.history-modal span.edit-reason { background-color: #212121; color: #fff; }',
     // name badges and "cooked" messages (I don't know but, they look fucking ugly)
-    '..moderator .clearfix>.topic-meta-data>.names span.user-title, .moderator .nav-pills>.topic-meta-data>.names span.user-title, .moderator .container>.topic-meta-data>.names span.user-title, .moderator .wrap>.topic-meta-data>.names span.user-title { background-color: #840000; }',
-    '.names .new_user a, .names .user-title, .names .user-title a { color: #fff }',
+    '.moderator .clearfix>.topic-meta-data>.names span.user-title, .moderator .nav-pills>.topic-meta-data>.names span.user-title, .moderator .container>.topic-meta-data>.names span.user-title, .moderator .wrap>.topic-meta-data>.names span.user-title { background-color: #840000; }',
     '.moderator .regular>.cooked { background-color: #212121 }',
 ];
 

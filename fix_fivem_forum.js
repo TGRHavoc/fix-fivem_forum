@@ -28,9 +28,9 @@ var css = [
     // histroy reason text
     '.modal.history-modal span.edit-reason { background-color: #212121; color: #fff; }',
     // name badges and "cooked" messages (I don't know but, they look fucking ugly)
-    '.moderator .names span.user-title { background-color: #840000; }',
+    '..moderator .clearfix>.topic-meta-data>.names span.user-title, .moderator .nav-pills>.topic-meta-data>.names span.user-title, .moderator .container>.topic-meta-data>.names span.user-title, .moderator .wrap>.topic-meta-data>.names span.user-title { background-color: #840000; }',
     '.names .new_user a, .names .user-title, .names .user-title a { color: #fff }',
-    '.moderator .cooked { background-color: #212121 }',
+    '.moderator .regular>.cooked { background-color: #212121 }',
 ];
 
 function addGlobalStyle(css) {

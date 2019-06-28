@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FiveM forum cleanup
 // @namespace    http://github.com/TGRHavoc
-// @version      0.0.9
+// @version      0.0.10
 // @homepage     https://github.com/TGRHavoc/fix-fivem_forum
 // @supportUrl   https://github.com/TGRHavoc/fix-fivem_forum/issues
 // @updateUrl    https://raw.githubusercontent.com/TGRHavoc/fix-fivem_forum/master/fix_fivem_forum.js
@@ -46,9 +46,9 @@ function isDarkThemeEnabled(){
     // discourse_theme_key = 33d0fb65-fe48-40a6-bf38-039253bb1944
     var metas = document.getElementsByTagName('meta');
     for (var i=0; i<metas.length; i++) {
-        if (metas[i].getAttribute("name") == "discourse_theme_key") {
+        if (metas[i].getAttribute("name") == "discourse_theme_ids") {
             var key = metas[i].getAttribute("content");
-            return key == "33d0fb65-fe48-40a6-bf38-039253bb1944";
+            return key == "9";
         }
     }
     console.error("NO discourse_theme_key META TAG FOUND");
@@ -66,7 +66,7 @@ function isDarkThemeEnabled(){
         return;
     }
 
-    for(var i  =0; i < css.length; i++){
+    for(var i =0; i < css.length; i++){
         addGlobalStyle(css[i]);
     }
 })();
